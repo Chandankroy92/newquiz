@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"> 
   <script type="text/javascript" src= "js/jquery.js"></script>
   <script type="text/javascript" src= "js/bootstrap.min.js"></script>
+  
   <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
   <script>
   </script>
@@ -17,24 +18,25 @@
   <section>
     <div class="container">
       <h4>Welcome to My quiz</h4>
-      <div class="row">
+      <div id="page1" class="row quiz">
         <div class="col-sm-12">
-          <h2>Question</h2>
+          <h2 id=quizHeader>What is addEventListener used for?</h2>
           <p>Question.....</p>
         </div>
       </div>
-      <div class="row">
-        <div class="col-sm-6">Answer....</div>
-        <div class="col-sm-6">Answer....</div>
-        <div class="col-sm-6">Answer....</div>
-        <div class="col-sm-6">Answer....</div>
+      <div id="questions" class="row">
+        <div class="col-sm-6"><a data-id="1" class="btn btn-default answer">attach a click event</a></div>
+        <div class="col-sm-6"><a data-id="2" class="btn btn-default answer">never use it</a></div>
+        <div class="col-sm-6"><a data-id="3" class="btn btn-default answer">nothing</a></div>
+        <div class="col-sm-6"><a data-id="4" class="btn btn-default answer">listens to html</a></div>
       </div>
       <div class="row pageMovement">
-        <div class="col-sm-4 btn btn-primary">Previous</div>
-        <div class="col-sm-4 col-sm-offset-4 btn btn-primary">Next</div>
+        <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary">Previous</div>
+        <div id="btnNext" class="col-xs-5 col-sm-4 col-sm-offset-4 col-xs-offset-2 btn btn-primary">Next</div>
       </div>
   </div>
   </section>
+  <script type="text/javascript" src= "js/app.js"></script>
 </body>
 </html>
 
