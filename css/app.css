@@ -18,3 +18,26 @@
 .container {
   border: 1px solid #D8D8D8;
 }
+
+.hide {
+  display:none;
+}
+
+.display {
+  display:block;
+}
+
+.progress{
+  margin-top: 20px;
+}
+
+#progressBar {
+  background-color: green;
+}
+
+#finishQuiz {
+  margin-top: 25px;
+}
+.selAnswer {
+  background: #4E9267;
+}

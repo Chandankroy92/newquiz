@@ -18,24 +18,34 @@
   <section>
     <div class="container">
       <h4>Welcome to My quiz</h4>
-      <div id="page1" class="row quiz">
+      <div id="quizContent" class="row">
         <div class="col-sm-12">
-          <h2 id=quizHeader>What is addEventListener used for?</h2>
-          <p>Question.....</p>
+          <h2 id="quizHeader"></h2>
+        </div>
+        <div id="questions" class="row">
+          <div class="col-sm-6"><a data-id="1" class="btn btn-default answer">1</a></div>
+          <div class="col-sm-6"><a data-id="2" class="btn btn-default answer">2</a></div>
+          <div class="col-sm-6"><a data-id="3" class="btn btn-default answer">3</a></div>
+          <div class="col-sm-6"><a data-id="4" class="btn btn-default answer">4</a></div>
         </div>
       </div>
-      <div id="questions" class="row">
-        <div class="col-sm-6"><a data-id="1" class="btn btn-default answer">attach a click event</a></div>
-        <div class="col-sm-6"><a data-id="2" class="btn btn-default answer">never use it</a></div>
-        <div class="col-sm-6"><a data-id="3" class="btn btn-default answer">nothing</a></div>
-        <div class="col-sm-6"><a data-id="4" class="btn btn-default answer">listens to html</a></div>
-      </div>
+
       <div class="row pageMovement">
-        <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary">Previous</div>
-        <div id="btnNext" class="col-xs-5 col-sm-4 col-sm-offset-4 col-xs-offset-2 btn btn-primary">Next</div>
+        <div id="btnPrevious" class="col-xs-5 col-sm-4 btn btn-primary pull-left">Previous</div>
+        <div id="btnNext" class="col-xs-5 col-sm-4 col-sm-offset-4 col-xs-offset-2 btn btn-primary pull-right">Next</div>
       </div>
-  </div>
+
+      <div class="row">
+        <div id="finishQuiz" class="btn btn-success btn-block">Submit Quiz</div>
+      </div>
+      <div class="progress">
+        <div id="progressBar" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">
+        <span class="sr-only">0% Complete</span>
+        </div>
+      </div>
+    </div>
   </section>
+  <script type="text/javascript" src= "js/json.js"></script>
   <script type="text/javascript" src= "js/app.js"></script>
 </body>
 </html>
